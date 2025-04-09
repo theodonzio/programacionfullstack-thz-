@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundodelapizza.com</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sofia&family=Yesteryear&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>MundoDeLaPizza<img src="img\pizza.png" id="logo"></h1>
+
+        <div id="navbar">
+            <a href="#padre1" style="color: white; text-decoration: none; cursor: pointer;"><h3>RECETA</h3></a>
+            <a href="tipos.html" style="color: white; text-decoration: none; cursor: pointer;"><h3>TIPOS</h3></a>
+        </div>
+    </header>
+
+    <h2 id="bienvenida">Bienvenidos al blog!</h2>
+
+    <hr>
+
+    <div id="historia">
+        <h2>Historia</h2>
+        <i><p> 
+        En nuestra pizzería, la pasión por la pizza auténtica es el motor que nos impulsa cada día. Desde el principio, hemos buscado traer un pedazo de Italia a cada mesa, utilizando ingredientes frescos y de calidad, y siguiendo las recetas tradicionales de Nápoles. Cada pizza que servimos es una obra de arte, preparada con dedicación y esmero por nuestros expertos pizzaiolos.
+        Nos enorgullece ofrecer una experiencia que va más allá de la comida. En nuestro espacio, encontrarás un ambiente acogedor, familiar y lleno de sabor, donde cada bocado te transporta a las tradicionales trattorias italianas. Creemos que una buena pizza no solo llena el estómago, sino también el corazón. ¡Te invitamos a descubrir el auténtico sabor de la pizza italiana y a disfrutar de un momento especial con nosotros!
+        </p></i>
+    </div>
+
+    <main>
+        <div class="card">
+            <img src="img\pizzahawaiana.jpg">
+
+            <h2>Pizza Hawaiana</h2>
+
+            <div class="textocard">
+                <h3>Ingredientes:</h3>
+                    <ul>
+                        <li>Masa para pizza</li>
+                        <li>Salsa de tomate</li>
+                        <li>Jamón cocido en cubos</li>
+                        <li>Piña en trozos</li>
+                    </ul>
+                <h3>Preparación:</h3>
+                    <p>Extiende la masa y cúbrela con la salsa. Añade el jamón y los trozos de piña de manera uniforme. Hornea a 220 °C por 12-14 minutos. El contraste dulce-salado es lo que la hace especial.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img\Pizza-cuatro-quesos.jpeg">
+
+            <h2>Pizza Cuatro Quesos</h2>
+
+            <div class="textocard">
+                <h3>Ingredientes:</h3>
+                    <ul>
+                        <li>Masa para pizza</li>
+                        <li>Queso azul</li>
+                        <li>Queso parmesano</li>
+                        <li>Queso cheddar</li>
+                        <li>Mozzarella</li>
+                    </ul>
+                <h3>Preparación:</h3>
+                    <p>Reparte los cuatro quesos sobre la base de masa, sin necesidad de salsa. Hornea a 220 °C durante 10-12 minutos. El resultado es una pizza súper cremosa y llena de sabor.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img\pollobbq.jpg">
+
+            <h2>Pizza de Pollo BBQ</h2>
+
+            <div class="textocard">
+                <h3>Ingredientes:</h3>
+                    <ul>
+                        <li>Masa para pizza</li>
+                        <li>Salsa barbacoa</li>
+                        <li>Pollo cocido desmenuzado</li>
+                        <li>Cebolla morada en aros</li>
+                    </ul>
+                <h3>Preparación:</h3>
+                    <p>Unta la base con salsa BBQ, añade el pollo y la cebolla. Puedes agregar queso si gustas. Hornea a 220 °C por 12 minutos. Queda jugosa y con un toque ahumado delicioso.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+
+<style>
+    html{
+        scroll-behavior: smooth;
+    }
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    body{
+        background-color: #e0e0e0;
+    }
+
+    header{
+        background-color: #7c1b0c;
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 90px;
+    }
+
+    #navbar{
+        display: flex;
+        align-items: center;
+        gap: 40px;
+
+        margin-right: 40px;
+    }
+
+    header h1{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 35px;
+
+        margin-left: 20px;
+    }
+
+    header h1 img{
+        width: 30px;
+    }
+
+    #bienvenida{
+        margin: 20px;
+        color: #7c1b0c;
+    }
+
+    hr{
+        border: none;
+        height: 2px;
+        background-color: #7c1b0c;
+        width: 69%;
+        margin-left: 20px;
+    }
+
+    #historia{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        width: 70%;
+
+        color: #7c1b0c;
+    }
+
+    #historia p{
+        margin-block: 10px;
+        font-size: 17px;
+        font-family: "Sofia", cursive;
+    }
+
+    main{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .card{
+        background-color: #7C1B0C;
+        color: white;
+        margin: 10px;
+        width: 300px;
+        padding: 20px;
+        border-radius: 20px;
+
+    }
+
+    .card img{
+        width: 300px;
+        height: 250px;
+        border-radius: 10px;
+    }
+
+    .card h2{
+        margin-block: 10px;
+        color: #ecb80e;
+    }
+
+    .card h3{
+        color: #ecb80e;
+    }
+
+    .card ul{
+        margin-left: 40px;
+    }
+
+    .textocard{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+</style>
