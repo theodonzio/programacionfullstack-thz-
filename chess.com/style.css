@@ -1,0 +1,42 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    background-color: #3b2a16;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+}
+
+body{
+    display: grid;
+
+    grid-template-columns: repeat(8, 0fr);
+    grid-template-rows: repeat(8, 0fr);
+
+    grid-template-areas: 
+    'white black white black white black white black'
+    'black white black white black white black white'
+    'white black white black white black white black'
+    'black white black white black white black white'
+    'white black white black white black white black'
+    'black white black white black white black white'
+    'white black white black white black white black'
+    'black white black white black white black white'
+}
+
+.black{
+    background-color: #000000;
+    width: 50px;
+    height: 50px;
+}
+
+.white{
+    background-color: #ffffff;
+    width: 50px;
+    height: 50px;
+}
