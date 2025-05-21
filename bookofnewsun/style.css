@@ -1,0 +1,144 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: darkkhaki;
+}
+
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px;
+}
+
+header nav{
+    display: flex;
+    list-style-type: none;
+    gap: 15px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2{
+    font-family: "Caudex", serif;
+}
+
+main{
+    display: grid;
+    gap: 10px;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    grid-template-areas: 
+    'aside section1 section1'
+    'aside section2 section2';
+
+    margin: 10px;
+}
+aside{
+    grid-area: aside;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    background-image: url(https://miro.medium.com/v2/resize:fit:1193/0*GyDzmSt-tenYejML.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+    text-shadow: 2px 2px 4px #000000b3;
+}
+
+#section1{
+    grid-area: section1;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#section2{
+    grid-area: section2;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#section2 ul{
+    margin-left: 20px;
+}
+
+aside, #section1, #section2{
+    border-radius: 10px;
+    border: solid 1px black;
+}
+
+footer{
+    background-color: #3f3e24;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media (width >= 480px) and (width <= 768px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        flex-direction: center;
+        gap: 20px;
+    }
+
+    main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        grid-template-areas: 
+        'aside aside'
+        'section1 section2 ';
+    }
+}
+
+@media (width >= 320px) and (width <= 480px) {
+    header{
+        flex-direction: column;
+        align-items: center;
+        flex-direction: center;
+        gap: 20px;
+    }
+
+    header nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    main{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+
+        grid-template-areas: 
+        'aside'
+        'section1'
+        'section2';
+    }
+}
